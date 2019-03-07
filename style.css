@@ -9,3 +9,45 @@ html {
   background-color: #323232;
   color: #cdcdcd;
 }
+.width {
+  max-width: calc(30vw);
+  margin: 2px;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  transform: translate(40vw);
+}
+.remove {
+  background-color: rgb(46, 138, 66); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+input:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: red;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+article {
+  margin: 4px;
+  text-align: center;
+  outline: 1px solid #cdcdcd;
+  min-height: 200px;
+}
