@@ -9,7 +9,7 @@
   </head>
   <body>
     <form class="list width">
-      <h1>The ultimate "to do" list</h1>
+      <h1>The Ultimate List</h1>
       <!-- title -->
       <label for="title">Title</label>
       <input
@@ -19,6 +19,7 @@
         required
         minlength="3"
         maxlength="50"
+        placeholder="title?"
       />
       <!-- description -->
       <label for="description">Description</label
@@ -29,14 +30,29 @@
         id="description"
         name="description"
         required
-        minlength="10"
+        minlength="1"
+        placeholder="short description"
       ></textarea>
       <!-- hint -->
       <label for="hint">Hint</label>
-      <input type="text" id="hint" name="hint" required minlength="1" />
+      <input
+        type="text"
+        id="hint"
+        name="hint"
+        required
+        minlength="1"
+        placeholder="any help?"
+      />
       <!-- goal -->
       <label for="goal">Goal</label>
-      <input type="text" id="goal" name="goal" required minlength="10" />
+      <input
+        type="text"
+        id="goal"
+        name="goal"
+        required
+        minlength="10"
+        placeholder="your goal?"
+      />
       <!-- SUBMIT BUTTON -->
       <button type="submit" name="submit" id="submitting">&#x2b;</button>
     </form>
