@@ -52,10 +52,10 @@ article {
   min-height: 200px;
 }
 #submitting {
-  background-color: #cdcdcd; /* Green */
+  background-color: #cdcdcd;
   border: none;
   color: #323232;
-  padding: 15px 32px;
+  padding: -5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
