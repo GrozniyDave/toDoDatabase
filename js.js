@@ -68,6 +68,54 @@ form.addEventListener("submit", e => {
   console.log(payload);
   post(payload);
 });
+//validity title
+form.elements.title.addEventListener("blur", k => {
+  if (form.elements.title.checkValidity()) {
+    document.querySelector("#title").style.boxShadow =
+      "1px 2px rgb(99, 145, 68)";
+  } else {
+    document.querySelector("#title").style.boxShadow =
+      "2px 4px rgb(148, 63, 63)";
+  }
+});
+//validity description
+
+// form.elements.title.addEventListener("focus", e => {
+//   if (form.elements.title.focus()) {
+//     document.querySelector("#title").style.border = "10px solid #cdcdcd";
+//   }
+// });
+
+//when blur,then change validity
+form.elements.description.addEventListener("blur", k => {
+  if (form.elements.description.checkValidity()) {
+    document.querySelector("#description").style.boxShadow =
+      "1px 2px rgb(99, 145, 68)";
+  } else {
+    document.querySelector("#description").style.boxShadow =
+      "2px 4px rgb(148, 63, 63)";
+  }
+});
+//valididty hint
+form.elements.hint.addEventListener("blur", k => {
+  if (form.elements.hint.checkValidity()) {
+    document.querySelector("#hint").style.boxShadow =
+      "1px 2px rgb(99, 145, 68)";
+  } else {
+    document.querySelector("#hint").style.boxShadow =
+      "2px 4px rgb(148, 63, 63)";
+  }
+});
+//validity for goal
+form.elements.goal.addEventListener("blur", k => {
+  if (form.elements.goal.checkValidity()) {
+    document.querySelector("#goal").style.boxShadow =
+      "1px 2px rgb(99, 145, 68)";
+  } else {
+    document.querySelector("#goal").style.boxShadow =
+      "2px 4px rgb(148, 63, 63)";
+  }
+});
 
 //posting to database
 function post(newTask) {
